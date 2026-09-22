@@ -1,3 +1,91 @@
+html{
+  box-sizing: border-box;
+  /*REM*/
+  font-size: 62.5%;
+}
+*, *:before, *:after{
+  box-sizing: inherit;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.6rem; /*1rem -> 10px (pixeles)*/
+}
+
+img{
+  max-width: 100%;
+}
+
+.navbar{
+  display: flex; /*colocamos todos los hijos de nav en orizontal*/
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.nav-items{
+  display: flex;
+}
+
+.nav-items li{
+  list-style: none;
+  margin-left: 1.5rem;
+}
+
+.nav-items li a{
+  text-decoration: none;
+  color: #003366;
+}
+
+.container{
+  width: 140rem;
+  margin: 0 auto;
+}
+
+.logo-navbar{
+  width: 10rem;
+  height: 8rem;
+}
+
+.btn{
+  text-decoration: none;
+  color: #003366;
+  padding: 1.5rem 2rem;
+  border-radius: 9rem;
+}
+
+.btn-amarillo{
+  background-color: #ffaa00;
+}
+
+.hero{
+  background-image: url("../img/banner.png");
+  height: 60rem;
+  background-position: center;
+  background-size: cover;
+}
+
+.subtitulo{
+  color: #ffaa00;
+  font-size: 2.5rem;
+}
+
+.texto-blanco{
+  color: white;
+}
+
+.texto-verde{
+  color: #a3d9a5;
+}
+
+.btn-blanco{
+  color: white;
+  border: solid white;
+}
+
+.texto-header{
+  padding: 20rem 0;
+}
+
+.texto-header p,h1,h2,div{
+  margin: 4rem 0;
 }
